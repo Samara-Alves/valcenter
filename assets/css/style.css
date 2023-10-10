@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "UTF-8";.navbar-exp
 
 /*-----------------------------------------------------------------------------------
 
@@ -1684,18 +1684,33 @@ img.left {
 /*-------------------------------------------------------
            iconredessociais
 -------------------------------------------------------*/
+#redessociais img {
+  margin-right: 20px;
+  width: 90px;
+}
+
 .icon-redessociais {
-  width: 46.588px;
-  height: 46.476px;
+  width: auto;
+  height: 100%;
   font-size: 32px;
   color: #F0A300;
   display: inline-flex;
   align-items: flex-start;
   gap: 42.88px;
 }
-.user {
-  align-items:center; 
+#redessociais .rest h3 {
+  font-size: 60px;
+  font-weight: 800;
 }
+#redessociais .rest h3 span {
+  font-size: 60px;
+}
+
+#redessociais i {
+  
+  align-items: center;
+}
+
 .seguidores {
  align-items: center;  
 }
@@ -1705,6 +1720,7 @@ img.left {
   align-items: center;  
   text-transform: uppercase;
  }
+
 .icon-redessociaisfooter {
   font-size: 22px;
   color: #F0A300;
@@ -1713,24 +1729,38 @@ img.left {
   gap: 42.88px;
 }
 
-@media all and (min-width: 375px) and (max-width: 900px){
-  .icon-redessociais {
-    font-size: 18px;  
+
+@media all and (min-width: 275px) and (max-width: 900px){
+ 
+  #redessociais .rest h3 {
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-weight: 200;
   }
+
+  #redessociais .rest h3 span {
+    font-size: 30px;
+    font-weight: 200;
+  } 
+
+  .icon-redessociais {
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: 40px;   
+  }
+  
+  .icon-redessociais a {
+   margin-right: 8px;
+   font-size: 16px;  
+  }  
   .seguidores h4 {  
     display: inline-flex;
     align-items: center;
     font-weight: 100;
   }
-
   .seguidores p {
      align-items: center;
   }
-
-  .user {
-
-  }
-
 }
 
 
@@ -5317,7 +5347,7 @@ body.loaded {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 25%;
+	height: 30%;
   text-align: center;
   z-index: 5;
 }
@@ -5325,7 +5355,7 @@ body.loaded {
 .card-text-influ {
 width: 100%;
 height: auto;
-padding: 0 10px;
+padding: 0 5%;
 box-sizing: border-box;
 background-color: transparent;
 position: absolute;
@@ -5334,13 +5364,16 @@ left: 0;
 }
 
 .card-text-influ span {
-  font-size: 16px;
+  max-width: 100%;
+	padding-bottom: 0;
+	top: -10%;
+  font-size: 14px;
   text-align: center; 
-  letter-spacing: 0.64px;
-  margin: 10px;
+  letter-spacing: 0.6px;
+  margin: 8%;
 }
 
-@media screen and (min-width: 375px) and (max-width: 1120px) {
+@media screen and (min-width: 375px) and (max-width: 985px) {
   .card-info {
     height: 20%;
   }
@@ -5358,14 +5391,17 @@ left: 0;
     width: 100%;
     height: 25%;
     text-align: center;
-    z-index: 5
+    z-index: 5;
   } 
 
   .card-text-influ span {
-    font-size: 10px;
     text-align: center; 
     letter-spacing: 0.64px;
   }
+  
+  .card-text-influ  strong {
+    font-size: 8px;
+   }
 }
 
 
@@ -7389,11 +7425,6 @@ footer .bg-pattern {
   line-height: normal;
 }
 
-@media screen and (min-width: 375px) and (max-width: 900px) {
-
-}
-
-
 #map {
   float: right;
   font-size: 12px;
@@ -7403,10 +7434,6 @@ footer .bg-pattern {
   cursor: pointer;
   float: right;
 }
-@media all and (min-width: 375px) and (max-width: 900px) {
-  
-}
-
 
 .showcase-full {
   position: relative;
@@ -7791,11 +7818,11 @@ body.inter-center {
   margin-bottom: 20px;
   line-height: 1;
 }
-
 .block-serv .content p {
   font-size: 14px;
 }
-@media all and (min-width: 375px) and (max-width: 900px) {
+
+@media all and (min-width: 275px) and (max-width: 900px) {
   .block-serv .design {
     display: flex;
     flex-direction: column-reverse;   
@@ -7969,7 +7996,6 @@ body.inter-center {
   width: auto;
   height: 100%;
 }
-
 
 /*Responsividade sobre*/
 @media all and (min-width: 375px) and (max-width: 1200px) {
@@ -8605,20 +8631,8 @@ header.in-box {
   left: 0;
   background-size: cover;
 }
-@media all and (min-width: 768px) and (max-width: 2100px){
-.swiper-slide .image1 {
-  background-image: url(../imgs/valcenter/carrossel/A_DESKTOP.webp);
-}
-.swiper-slide .image2 {
-  background-image: url(../imgs/valcenter/carrossel/B_DESKTOP.webp);
-}
-.swiper-slide .image3 {
-  background-image: url(../imgs/valcenter/carrossel/C_DESKTOP.webp);
-  }
-}
-
 /*Mobile firts*/
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 275px) and (max-width: 768px) {
   .swiper-slide  .image1 {
     background-image: url(../imgs/valcenter/carrossel/A_MOBILE.webp);
     background-size: cover;      
@@ -8631,7 +8645,24 @@ header.in-box {
     background-image: url(../imgs/valcenter/carrossel/C_MOBILE_000.webp);
     background-size: cover;
   }
+  .estrelaValcenter{
+    display: none;
+  }
 }
+
+@media all and (min-width: 768px) and (max-width: 2100px){
+.swiper-slide .image1 {
+  background-image: url(../imgs/valcenter/carrossel/A_DESKTOP.webp);
+}
+.swiper-slide .image2 {
+  background-image: url(../imgs/valcenter/carrossel/B_DESKTOP.webp);
+}
+.swiper-slide .image3 {
+  background-image: url(../imgs/valcenter/carrossel/C_DESKTOP.webp);
+  }
+}
+
+
 
 .slider .parallax-slider .swiper-slide-active .caption .thin,
 .slider .parallax-slider .swiper-slide-active .caption .btn-curve,
