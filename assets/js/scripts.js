@@ -837,6 +837,7 @@ $(function () {
 
 
 
+
     /* =============================================================================
     ----------------------------  Swiper Data Controls   ---------------------------
     ============================================================================= */
@@ -1194,52 +1195,7 @@ $(function () {
     ------------------------------ work-carsouel ------------------------------
     ============================================================================= */
 
-    window.onload = function init() {
-
-    let mobile = window.matchMedia("(max-width: 525px)"); //1    
-    let bigTablet = window.matchMedia("(max-width: 1024px)"); //3
-    let desktop = window.matchMedia("(max-width: 2000px)"); //4
-    // let widescreen = window.matchMedia("(min-width: 2560px)"); //6
-  
-  
-    if (mobile.matches) {  
-      $(document).ready(function () {
-        $('.work-crus').slick({
-          infinite: true,
-          slidesToShow: 2
-        });
-      }); 
-      
-    } else if (bigTablet.matches) {
-  
-      $(document).ready(function () {
-        $('.work-crus').slick({
-          infinite: true,
-          slidesToShow: 4
-        });
-      });
-  
-    } else if (desktop.matches) {
-  
-      $(document).ready(function () {
-        $('.work-crus').slick({
-          infinite: true,
-          slidesToShow: 5
-        });
-      });
-  
-    } else {
-  
-      $(document).ready(function () {
-        $('.work-crus').slick({
-          infinite: true,
-          slidesToShow: 6
-        });
-      });
-  
-    }
-  };
-
+ 
 
     /* =============================================================================
     -------------------------------  Preloader svg   -------------------------------
