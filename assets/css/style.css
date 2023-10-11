@@ -1698,19 +1698,6 @@ img.left {
   align-items: flex-start;
   gap: 42.88px;
 }
-#redessociais .rest h3 {
-  font-size: 60px;
-  font-weight: 800;
-}
-#redessociais .rest h3 span {
-  font-size: 60px;
-}
-
-#redessociais i {
-  
-  align-items: center;
-}
-
 .seguidores {
  align-items: center;  
 }
@@ -1747,14 +1734,12 @@ img.left {
     display: inline-block;
     padding-top: 0;
     padding-bottom: 40px;   
-  }
-  
+  }  
   .icon-redessociais a {
    margin-right: 8px;
    font-size: 16px;  
   }  
-  .seguidores h4 {  
-    display: inline-flex;
+  .seguidores h4 {   
     align-items: center;
     font-weight: 100;
   }
