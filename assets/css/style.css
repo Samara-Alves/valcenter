@@ -1330,6 +1330,7 @@ hr {
   -webkit-text-stroke: 1px #fff;
 }
 
+
 .dark-text .stroke,
 .text-dark .stroke {
   color: transparent;
@@ -1393,7 +1394,7 @@ img.left {
 }
 
 .bord-thin-top {
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(231, 231, 231, 0.05);
 }
 
 .bord-thin-top.bord-dark {
