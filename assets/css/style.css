@@ -4625,7 +4625,7 @@ body.loaded {
 }
 
 .intro-corp .imgs .img1.main-color3:after {
-  background: #55e6a5;
+  background: #f8ba01;
 }
 
 .intro-corp .imgs .img2 {
@@ -5942,9 +5942,12 @@ left: 0;
 /* Features & list & tabs & accordin
 -----------------------------------------------------------------*/
 .list-arrow li .icon {
-  width: 15px;
+  width: 30px;
   margin-right: 10px;
 }
+.rest li i {
+  font-size: 30px;
+} 
 
 .dot-list li {
   position: relative;
@@ -5965,6 +5968,63 @@ left: 0;
 .text-dark .dot-list li:before {
   background: #1d1d1d;
 }
+
+.testimonial{
+  margin: 0 20px 40px;
+}
+.testimonial .testimonial-content{
+  position: relative;
+}
+.testimonial .testimonial-content:before{
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  border-top: 15px solid #718076;
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.testimonial .testimonial-content:after{
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  border-top: 15px solid #718076;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.testimonial .description{
+  font-size: 15px;
+  font-style: italic;
+  color: #8a8a8a;
+  line-height: 23px;
+  margin: 0;
+}
+.testimonial .title{
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #525252;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin: 0 0 5px 0;
+}
+.testimonial .post{
+  display: block;
+  font-size: 14px;  
+}
+
+.owl-theme .owl-controls{
+  margin-top: 20px;
+}
+.owl-theme .owl-controls .owl-page span{
+  background: #ccc;
+  opacity: 1;
+  transition: all 0.4s ease 0s;
+}
+/*end products */
+
 
 .skills .skill-item .skill-progress {
   height: 10px;
