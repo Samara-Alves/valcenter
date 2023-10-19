@@ -5963,6 +5963,9 @@ left: 0;
 .rest li i {
   font-size: 30px;
 } 
+.topic ul{
+  list-style-type: none;
+}
 
 .dot-list li {
   position: relative;
@@ -8287,8 +8290,7 @@ body.inter-center {
   }
  .rest .icon {
   font-size: 14px;
-  margin-right: 0;
-    
+  margin-right: 0;    
   }
 }
 
@@ -10739,6 +10741,18 @@ header.in-box {
 
   .intro-corp .imgs .img2 {
     width: 45%;
+  }
+
+  #login-form .signup-form {
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 10px;
+    background: transparent;
+    color: #4b4e53;
+    font-size: 14px;
+    margin: 0;
+    outline: medium none;
+    padding: 2px 20px 8px 20px;
   }
 
   .intro-img-parlx .img img {
