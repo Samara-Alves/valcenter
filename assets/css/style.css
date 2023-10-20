@@ -49,8 +49,8 @@ body.noise-img:before {
 }
 
 body.home-digital .container,
-body.home-arch .container,
-body.home-corp .container {
+body.home-arch .container
+/*body.home-corp .container */{
   max-width: 1200px;
 }
 
@@ -349,14 +349,14 @@ img {
   background: linear-gradient(250deg, #ffb600 62.47%, rgba(250, 182, 0, 0.00) 90%);
 }
 .line-200 { 
-    font-size: 2.25rem;
-    position: relative;
+    font-size: 2.25rem;   
+    position: relative;    
  }
  .line-200::after {
     position: absolute;
     content: '';
-    background-color: #ffb600;
-    width: 10rem;
+    background: linear-gradient(250deg, #ffb600 62.47%, rgba(250, 182, 0, 0.00) 90%);
+    width: 20rem;
     height: 4px;
     bottom: 0;
     left: 0;
@@ -444,10 +444,17 @@ hr {
   padding: 15px 25px;
   text-align: center;
 }
+.butn.butn-client{
+  display: inline-block;
+  width: auto; 
+  padding: 15px 25px;
+  text-align: center;
+  border-radius: 40px;
+}
 
 .butn.butn-bord {
   border-color: #fff;
-  background: linear-gradient(180deg, #FFD871 0%, #DA9F00 100%);
+  background: #F0A300;
   color: #000;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
@@ -455,7 +462,6 @@ hr {
 }
 
 .butn.butn-botao {
-  border-color: #fff;
   background: linear-gradient(180deg, #FFD871 0%, #DA9F00 100%);
   color: #000;
   -webkit-transition: all .4s;
@@ -3128,7 +3134,7 @@ body.loaded {
 /* Menu
 -----------------------------------------------------------------*/
 .navbar {
-  position: absolute;
+  /*position: absolute;*/
   left: 0;
   top: 0;
   padding: 0;
@@ -3217,7 +3223,7 @@ body.loaded {
   letter-spacing: 1px;
   color: #fff;
   padding: 10px 10px 15px 10px;
-  margin: 0 10px;
+  /*margin: 0 10px;*/
 }
 
 .navbar .navbar-nav .nav-link .rolling-text {
@@ -4659,7 +4665,13 @@ body.loaded {
   font-size: 20px;
   margin: 2%;
   outline: medium none;
-  padding: 2px 2px 8px 20px;
+  padding: 1px 1px 1px 5px;
+}
+.form-edit {
+
+  margin-top: 80px; 
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(46, 46, 46, 0.6);
 }
 
 
@@ -10580,10 +10592,8 @@ header.in-box {
     width: 100%;
     max-width: 100%;
   }
-  .navbar .logo {
-    max-width: 80px !important;
-    margin-left: 30px;
-  }
+
+
 
   .navbar .navbar-collapse {
     background: transparent;
