@@ -747,9 +747,18 @@ hr {
 
 .social-text .rolling-text {
   line-height: 30px;
-  height: 30px;
+  height: 30px; 
 }
 
+
+@media all and (min-width: 275px) and (max-width: 900px) {
+
+  .social-text {
+      flex-wrap: wrap;
+      justify-content: center;  
+  }
+  }
+  
 .rolling-text:hover .letter,
 .rolling-text.play .letter {
   -webkit-transform: translateY(-100%);
@@ -4109,7 +4118,7 @@ body.loaded {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #fff;
+  background: #ffc001;
   position: absolute;
   top: 50%;
   left: -25px;
@@ -4834,6 +4843,14 @@ body.loaded {
   fill: #fff;
 }
 
+  #video-card {
+    flex-direction: initial;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: auto;
+  }
+
 /* Blogs
 -----------------------------------------------------------------*/
 .blog-list .item {
@@ -5394,7 +5411,7 @@ left: 0;
 	top: -10%;
   font-size: 14px;
   text-align: center; 
-  letter-spacing: 0.6px;
+  letter-spacing: 0.6%;
   margin: 8%;
 }
 
@@ -5420,8 +5437,9 @@ left: 0;
   } 
 
   .card-text-influ span {
+    font-size: 5px;    
     text-align: center; 
-    letter-spacing: 0.64px;
+    flex-wrap: wrap;
   }
   
   .card-text-influ  strong {
