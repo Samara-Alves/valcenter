@@ -4625,7 +4625,7 @@ body.loaded {
   width: 75%;
   margin-left: 25%;
   position: relative;
-  z-index: 3;
+ 
 }
 
 .intro-corp .imgs .img1:after {
@@ -4665,6 +4665,7 @@ body.loaded {
   width: 50%;
   z-index: 4;
 }
+
 
 #login-form  input{
   border: none;
@@ -9703,6 +9704,7 @@ header.in-box {
   border: 1px solid #fff;
   border-radius: 50%;
 }
+
 
 /* Shop
 -----------------------------------------------------------------*/
