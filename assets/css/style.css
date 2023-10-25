@@ -3232,6 +3232,8 @@ body.loaded {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #fff;
+  background-color: #000;
+  border: none;
   padding: 10px 10px 15px 10px;
   /*margin: 0 10px;*/
 }
@@ -3334,6 +3336,14 @@ body.loaded {
 .navbar .dropdown-menu .dropdown-item:hover {
   padding-left: 30px;
   background: transparent;
+}
+
+@media (min-width: 285px) {
+  button .navbar-expand-lg {
+    overflow: auto;
+    max-height: 85vh;
+    align-items: flex-start;
+  }
 }
 
 .navbar .dropdown-menu .dropdown-item:hover:after {
@@ -3470,7 +3480,9 @@ body.loaded {
 .navbar .dropdown-toggle:after {
   margin-left: 5px;
   vertical-align: 12px;
+  
 }
+
 
 .topnav {
   position: fixed;
@@ -10598,21 +10610,20 @@ header.in-box {
     overflow: auto;
   }
 
+  /* display: none;*/
   .navbar .navbar-collapse::-webkit-scrollbar {
-    display: none;
-  }
+    display: flex;
+  } 
 
   .navbar.nav-scroll {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-
   .navbar .container {
     padding: 0;
     width: 100%;
     max-width: 100%;
   }
-
 
 
   .navbar .navbar-collapse {
