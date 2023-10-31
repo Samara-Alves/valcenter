@@ -3232,7 +3232,7 @@ body.loaded {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #fff;
-  background-color: #000;
+  background-color: transparent;
   border: none;
   padding: 10px 10px 15px 10px;
   /*margin: 0 10px;*/
