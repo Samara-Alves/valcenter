@@ -10444,6 +10444,15 @@ header.in-box {
   border-radius: 40px;
 }
 
+.shop-checkout #options {
+  background-color: transparent;
+  border: 0;
+  border-radius: 4px;
+  height: 36px;
+  line-height: 36px;
+}
+
+
 
 /* ====================== [ Start Responsive ] ====================== */
 @media screen and (max-width: 1300px) {
