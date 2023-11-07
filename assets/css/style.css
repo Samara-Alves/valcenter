@@ -9943,8 +9943,8 @@ header.in-box {
   min-width: 260px;
   height: 40px;
 }
-
-.main-shop .shop-products .top-side .select-styled {
+/*.select-styled */
+.main-shop .shop-products .top-side {
   position: absolute;
   top: 0;
   right: 0;
@@ -9958,8 +9958,8 @@ header.in-box {
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-
-.main-shop .shop-products .top-side .select-styled:after {
+/* .select-styled*/
+.main-shop .shop-products .top-side:after {
   content: "";
   width: 0;
   height: 0;
@@ -9969,6 +9969,7 @@ header.in-box {
   top: 16px;
   right: 0;
 }
+/*
 
 .main-shop .shop-products .top-side .select-styled:active,
 .main-shop .shop-products .top-side .select-styled.active {
@@ -9980,6 +9981,7 @@ header.in-box {
   top: 9px;
   border-color: transparent transparent #fff transparent;
 }
+*/
 
 .main-shop .shop-products .top-side .select-options {
   display: none;
@@ -10400,7 +10402,7 @@ header.in-box {
 
 .shop-cart .coupon input {
   padding: 14px;
-  background: transparent;
+  background: transparent !important;
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: #fff;
 }
@@ -10418,25 +10420,63 @@ header.in-box {
   padding: 0 10px;
 }
 
-.shop-checkout .order-form .form-group {
+.shop-checkout .order-form .form-group .controled {
   margin-bottom: 20px;
 }
 
-.shop-checkout .order-form .form-group label {
+.shop-checkout .order-form .form-group .controled label {
   margin-bottom: 10px;
   color: rgba(255, 255, 255, 0.7);
-  text-transform: uppercase;
+ /* text-transform: uppercase;*/
   letter-spacing: 1px;
-  font-size: 13px;
+  font-size: 22px;
 }
 
+.controled {
+ width: 100%;  
+outline: none;
+margin-bottom: 10px;
+background:  transparent !important;
+border: 1px solid rgba(255, 255, 255, 0.1);
+letter-spacing: 1px;
+font-size: 14px;
+margin: 0;
+padding: 2px 20px 8px 20px;
+color: #fff;
+} 
+
+select option {
+  background-color: #000000;
+}
+option[value=""][disabled] {
+  display: none;
+}
+.shop-checkout .dropdzone {
+  min-height: 150px;
+  justify-content: center;
+  border: 2px solid rgb(255, 255, 255);
+  background: transparent;
+  padding: 50px 40px;
+}
+.shop-checkout .pretty { 
+  left: 0;
+  top: 0;
+  min-width: 1em;
+  width: 100%;
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+ 
+} 
 .shop-checkout .order-form .form-group input {
   width: 100%;
   padding: 15px;
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background:  transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.1); 
 }
+
+
 
 .shop-checkout .checkout-order-info .butn {
   width: 100%;
@@ -10445,7 +10485,7 @@ header.in-box {
 }
 
 .shop-checkout #options {
-  background-color: transparent;
+  background-color: transparent !important;
   border: 0;
   border-radius: 4px;
   height: 36px;

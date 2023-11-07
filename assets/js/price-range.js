@@ -40,7 +40,7 @@ $(function () {
     });
   });
 
-
+/*
   $('select').each(function () {
     var $this = $(this), numberOfOptions = $(this).children('option').length;
 
@@ -84,9 +84,10 @@ $(function () {
       $list.hide();
     });
 
-  });
+  });*/
 
 });
+
 
 
 
