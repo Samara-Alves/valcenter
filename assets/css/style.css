@@ -5576,6 +5576,11 @@ left: 0;
   width: 100px;
   margin: auto;
 }
+#topicosvalcenter {
+  background-image: url(../imgs/BACKGROUND_SITE_C.webp);
+  background-position: center center;
+  background-size: cover;
+}
 
 .clients .brand:hover .img {
   -webkit-transform: scale(0);
@@ -7383,13 +7388,22 @@ footer .bg-pattern {
   opacity: 1;
 }
 
+#sessaovalcenter {
+  background-image: url(../imgs/BACKGROUND_SITE_B.webp);
+  
+}
+#sessaovalcenter h2 {
+  align-items: center !important;
+}
+
 .work-carsouel {
   position: relative;
 }
 
 .work-carsouel .work-crus.out {
-  width: 120%;
-  margin-left: -10%;
+  width: 100%;
+  margin-right: -40%;
+  margin-left: -30%;
 }
 
 .work-carsouel .work-crus .swiper-slide-active .img .cont span,
@@ -7527,7 +7541,14 @@ footer .bg-pattern {
 }
 
 .box-lojas {
-  width: 100%;
+width: 546.542px;
+height: 241.866px;
+flex-shrink: 0;
+ border-radius: 15.937px;
+border: 1.875px solid rgba(130, 130, 130, 0.63);
+background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.46) 100%);
+ 
+  /*width: 100%;
   height: auto;
   box-shadow: inset 2px 2px 50px 0 rgba(0, 0, 0, 0.45);
   border-radius: 80px;
@@ -7536,7 +7557,7 @@ footer .bg-pattern {
   margin: 5% auto 0 auto;
   background-size: cover;
   border-radius: 5px;
-  overflow: hidden;
+  overflow: hidden;*/
 }
 
 .work-carsouel .linhaLojas {
@@ -7554,11 +7575,8 @@ footer .bg-pattern {
 }
 
 #map {
-  float: right;
-  font-size: 12px;
-  color: #fff;
-  padding: 2px 4px;
-  border-radius: 4px;
+  float: right; 
+  margin: 4px 8px 4px;
   cursor: pointer;
   float: right;
 }
