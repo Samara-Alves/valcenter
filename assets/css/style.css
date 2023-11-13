@@ -327,7 +327,7 @@ figure {
 
 .text-dark .swiper-controls.arrow-out .left,
 .text-dark .swiper-controls.arrow-out .right {
-  border-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 img {
@@ -351,6 +351,7 @@ img {
 .line-200 {  
     position: relative;    
  }
+
  .line-200::after {
     position: absolute;
     content: '';
@@ -363,8 +364,11 @@ img {
  }
 
 hr {
-  background: linear-gradient(250deg, #ffb600 62.47%, rgba(250, 182, 0, 0.00) 90%);
-  width: 500px;
+  background: linear-gradient(200deg, #ffb600 60%, rgba(250, 182, 0, 0.00) 90%);
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: auto;
 }
 
 @media only screen and (min-device-width: 365px) and (max-width: 768px) {
@@ -1763,7 +1767,8 @@ img.left {
   .icon-redessociais {
     display: inline-block;
     padding-top: 0;
-    padding-bottom: 40px;   
+    font-size: 30px;
+   
   }  
 
   .icon-redessociais a {
@@ -4154,8 +4159,9 @@ body.loaded {
 }
 
 .swiper-slide img {
-  border-radius: 2%;
+  border-radius: 2%; 
 }
+
 
 
 #digitais h3 { 
@@ -7541,8 +7547,6 @@ footer .bg-pattern {
 }
 
 .box-lojas {
-width: 546.542px;
-height: 241.866px;
 flex-shrink: 0;
  border-radius: 15.937px;
 border: 1.875px solid rgba(130, 130, 130, 0.63);
@@ -8144,15 +8148,19 @@ body.inter-center {
 }
 
 /*Responsividade sobre*/
-@media all and (min-width: 375px) and (max-width: 1200px) {
-  .serv-box h3 {
-    font-size: 18px;
+@media all and (min-width: 275px) and (max-width: 1200px) {
+  .serv-box h3 {  
     letter-spacing: 2px;
-    margin: 5px; 
   }
    .serv-box .estrelaValcenter img {
     display: none; 
     }
+    .influencers img {
+      display: block;
+    }
+
+
+    
 }
 
 .maz-serv {
@@ -8355,7 +8363,6 @@ body.inter-center {
   font-size: 45px;
   font-style: normal;
   font-weight: 400;
-  line-height: 77.9%;
 }
 
 .serv-box span .mil {
@@ -8962,7 +8969,7 @@ header.in-box {
 .arch-slider .setting .swiper-button-prev {
   font-size: 12px;
   color: #fff;
-  background: #1d1d1d;
+  background: #F0A300;
   width: 60px;
   height: 60px;
   line-height: 60px;
@@ -9270,6 +9277,8 @@ header.in-box {
 }
 
 .testimonials-crev .testim .item .author-review .rate-stars {
+  display: flex;
+  align-items: center;
   font-size: 12px;
   color: #ffb818;
 }
@@ -9696,9 +9705,9 @@ header.in-box {
   height: 50px;
   line-height: 50px;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(240, 163, 0, 1);
   border-radius: 50%;
-  color: #fff;
+  color: #F0A300;
 }
 
 .swiper-controls.arrow-out .left {
