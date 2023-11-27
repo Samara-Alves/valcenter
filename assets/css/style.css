@@ -27,8 +27,7 @@ body {
   color: #fff;
   background-color: #1d1d1d;
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
-  /*font-family: 'Sora', sans-serif;*/
+  font-family: 'Montserrat', sans-serif; 
   overflow-x: hidden !important;
 }
 
@@ -5718,6 +5717,7 @@ left: 0;
   font-weight: 400;
   line-height: normal;
 }
+
 
 
 /* Career
