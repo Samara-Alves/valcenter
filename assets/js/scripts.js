@@ -239,7 +239,7 @@ $(function () {
 
 
 
-    
+
 
     /* ===============================  half slider  =============================== */
 
@@ -302,20 +302,20 @@ $(function () {
 
     /* =============================================================================
     ------------------------------  Slide influenciadores  -----------------------------
-    ============================================================================= */  
-  
+    ============================================================================= */
+
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
     });
 
 
@@ -720,10 +720,10 @@ $(window).on("load", function () {
         // options
         itemSelector: '.items',
         masonry: {
-          // use element for option
-          columnWidth: '.width2'
+            // use element for option
+            columnWidth: '.width2'
         }
-      });
+    });
 
     var $gallery = $('.gallery').isotope();
 
@@ -903,7 +903,9 @@ $(function () {
                         slidesPerView: 5,
                     },
                 }
+
             };
+
         };
 
         if ($(this).hasClass('swiper4')) {
@@ -1211,11 +1213,39 @@ $(function () {
     });
 
 
-     /* =============================================================================
-    ------------------------------ work-carsouel ------------------------------
-    ============================================================================= */
+    /* =============================================================================
+   ------------------------------ work-carsouel ------------------------------
+   ============================================================================= */
 
+
+
+    /* =============================================================================
+   ------------------------------ carrossel-influenciadores ------------------------------
+   ============================================================================= 
+   $(document).ready(function()
+   {
+       $('.img-influen').slick({
+           Infinity: 0,
+           slideToShow:3,
+           slideToScroll:3
+ });
  
+});*/
+    $(document).ready(function () {
+        $('.carousel').slick({
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots: true, // Adiciona indicadores de navegação
+            infinite: true, // Permite a rotação contínua
+            speed: 500, // Velocidade da transição entre os slides em milissegundos
+            slidesToShow: 4, // Quantidade de slides a serem exibidos ao mesmo tempo
+            slidesToScroll: 4 // Quantidade de slides a serem avançados/retrocedidos por vez
+        });
+    });
+
+
+
+
 
     /* =============================================================================
     -------------------------------  Preloader svg   -------------------------------
@@ -1315,7 +1345,7 @@ $(function () {
 
 
 
-          
+
 
 
         /* =============================================================================

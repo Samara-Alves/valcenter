@@ -5421,14 +5421,13 @@ body.loaded {
 }
 
 .card-text-influ {
-width: 100%;
-height: auto;
+position: relative;
+width: auto;
+height: 100%;
 padding: 0 5%;
 box-sizing: border-box;
 background-color: transparent;
-position: absolute;
-bottom: 0;
-left: 0;
+
 }
 
 .card-text-influ span {
@@ -5693,6 +5692,10 @@ left: 0;
 .clients-carso .img {
   margin: auto;
 }
+.img-influen {
+  width:90%;
+  margin:0px auto;
+}
 
 .clients-carso2 {
   padding: 60px 0;
@@ -5708,7 +5711,6 @@ left: 0;
 .clients-carso2 .img:hover {
   opacity: 1;
 }
-
 .clients .topicos {
   text-align: center;
   padding-top: 20px;
@@ -5716,8 +5718,6 @@ left: 0;
   font-weight: 400;
   line-height: normal;
 }
-
-
 
 /* Career
 -----------------------------------------------------------------*/
@@ -9550,8 +9550,11 @@ header.in-box {
 }
 
 .testim-crv .clients-carso .item>div {
-  margin: auto;
+  margin
+  : auto;
 }
+
+
 
 .testim-crv2 {
   position: relative;
