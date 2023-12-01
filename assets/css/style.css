@@ -6308,8 +6308,9 @@ background-color: transparent;
 
 /* Footer
 -----------------------------------------------------------------*/
+/*relative*/
 footer {
-  position: relative;
+  position: static;
 }
 
 footer .call-box {
