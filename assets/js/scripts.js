@@ -36,6 +36,7 @@ $(function () {
     /* =============================================================================
     --------------------------------  Navbar Menu   --------------------------------
     ============================================================================= */
+    
 
     $('.navbar .dropdown').hover(function () {
         $(this).find('.dropdown-menu').addClass('show');
@@ -77,7 +78,7 @@ $(function () {
         if (bodyScroll > 300) {
 
             navbar.addClass("nav-scroll");
-            logo.attr('src', 'assets/imgs/logo-dark.png');
+            logo.attr('src', 'assets/imgs/logo_b.webp');
 
         } else {
 
@@ -1122,7 +1123,7 @@ $(function () {
                         slidesPerView: 1,
                     },
                     768: {
-                        slidesPerView: 2,
+                        slidesPerView: 1,
                     },
                     1024: {
                         slidesPerView: 2,
