@@ -910,24 +910,32 @@ $(function () {
         };
 
         if ($(this).hasClass('swiper4')) {
-            var conf = {
+            var conf = {               
 
                 breakpoints: {
                     0: {
                         slidesPerView: 1,
                         spaceBetween: 10,
                     },
+                    325: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
                     640: {
-                        slidesPerView: 2,
+                        slidesPerView: 4,
                         spaceBetween: 30,
                     },
                     768: {
-                        slidesPerView: 3,
+                        slidesPerView: 4,
                     },
                     1024: {
                         slidesPerView: 4,
                     },
-                }
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                  }             
             };
         };
 
@@ -1234,15 +1242,56 @@ $(function () {
 });*/
     $(document).ready(function () {
         $('.carousel').slick({
-            autoplay: true,
-            autoplaySpeed: 2000,
+            autoplay: true,           
+           autoplaySpeed: 2000,
             dots: true, // Adiciona indicadores de navegação
             infinite: true, // Permite a rotação contínua
-            speed: 500, // Velocidade da transição entre os slides em milissegundos
+            speed: 700, // Velocidade da transição entre os slides em milissegundos
             slidesToShow: 4, // Quantidade de slides a serem exibidos ao mesmo tempo
-            slidesToScroll: 4 // Quantidade de slides a serem avançados/retrocedidos por vez
+            slidesToScroll: 4, // Quantidade de slides a serem avançados/retrocedidos por vez
+            responsive: {
+                0:{
+                    items:1,
+                },
+                768:{
+                    items:2,
+                },
+                640:{
+                    items:2,
+                },
+                1000:{
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true                 
+                }
+            },
+        }
         });
-    });
+       
+    /* if ($(this).hasClass('carousel')) {
+      var conf = {    
+      breakpoints: {
+                        0: {
+                            slidesPerView: 1,
+                            spaceBetween: 10,
+                        },
+                        640: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                        },
+                        1024: {
+                            slidesPerView: 2,
+                        },
+                    }
+    };
+ };*/
+
+});
 
 
 
