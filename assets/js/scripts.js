@@ -87,9 +87,9 @@ $(function () {
         }
     });
 
-    function noScroll() {
+    /*function noScroll() {
         window.scrollTo(0, 0);
-    }
+    }*/
 
     wind.on("scroll", function () {
 
@@ -156,6 +156,8 @@ $(function () {
         $(this).parent().parent().find(".sub-menu").toggleClass("sub-open").slideToggle();
         $(this).toggleClass("dopen");
     });
+
+
 
     /* =============================================================================
     ------------------------------  Parallax Swiper   ------------------------------
@@ -1243,13 +1245,40 @@ $(function () {
     $(document).ready(function () {
         $('.carousel').slick({
             autoplay: true,           
-           autoplaySpeed: 2000,
-            dots: true, // Adiciona indicadores de navegação
+            autoplaySpeed: 2000,
+            dots: false, // Adiciona indicadores de navegação
             infinite: true, // Permite a rotação contínua
-            speed: 700, // Velocidade da transição entre os slides em milissegundos
+            speed: 800, // Velocidade da transição entre os slides em milissegundos
             slidesToShow: 4, // Quantidade de slides a serem exibidos ao mesmo tempo
             slidesToScroll: 4, // Quantidade de slides a serem avançados/retrocedidos por vez
-            responsive: {
+            responsive: [
+                {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    dots: false                  
+                }
+            },
+                {
+                    breakpoint: 600, 
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1                       
+                    }
+                }
+            ]      
+        });
+
+                /*
                 0:{
                     items:1,
                 },
@@ -1265,10 +1294,8 @@ $(function () {
                         slidesToScroll: 3,
                         infinite: true,
                         dots: true                 
-                }
-            },
-        }
-        });
+                }*/
+       
        
     /* if ($(this).hasClass('carousel')) {
       var conf = {    

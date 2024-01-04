@@ -13,7 +13,9 @@
 /* Variables
 -----------------------------------------------------------------*/
 /* Typography
------------------------------------------------------------------*/
+----------------------------------------------------------------*/
+
+
 * {
   margin: 0;
   padding: 0;
@@ -5414,7 +5416,8 @@ body.loaded {
 
 .card-text p {
   text-align: center;
-  font-weight: 600;  
+  font-weight: 700;  
+  text-transform: uppercase;
 }
 
 .card-info-influenciadores {
@@ -5434,11 +5437,11 @@ height: 100%;
 padding: 0 5%;
 box-sizing: border-box;
 background-color: transparent;
-
 }
 
 .card-text-influ span {
-  max-width: 100%;
+  font-family: 'Lato', Montserrat, sans-serif; 
+  font-size: 10vh;
 	padding-bottom: 0;
 	top: -10%;
   font-size: 14px;
@@ -5452,9 +5455,10 @@ background-color: transparent;
     height: 20%;   
   }
 
-  .card-text p {  
-  font-size: 2vw;
+  .card-text p { 
   text-align: center; 
+  max-width: 100%;
+  padding-bottom: 20px;  
   }
 
   .card-info-influenciadores {
@@ -5467,14 +5471,13 @@ background-color: transparent;
     z-index: 5;
   } 
 
-  .card-text-influ span {
-    font-size: 1vw;    
+  .card-text-influ span {   
     text-align: center; 
+    max-width: 100%;
     flex-wrap: wrap;
   }
   
-  .card-text-influ  strong {
-    font-size: 2vw;
+  .card-text-influ  strong {   
     max-width: 20px;
    }
 }
@@ -7556,11 +7559,16 @@ footer .bg-pattern {
 }
 
 .box-lojas {
+  width: 80%;
+  height: 350px;
   flex-shrink: 0;
   border-radius: 15.937px;
   border: 1.875px solid rgba(130, 130, 130, 0.63);
   background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.46) 100%);
- 
+}
+.box-lojas-segundo span {
+  font-size: 2vh!important;  
+}
   /*
    width: 100%;
   height: 100%;
@@ -7572,10 +7580,9 @@ footer .bg-pattern {
   background-size: cover;
   border-radius: 5px;
   overflow: hidden;*/
-}
 .box-lojas span {
-  font-size: 16px;
-  line-height: 1;
+  font-size: 14px;
+  /*line-height: 1;*/
 }
 
 .work-carsouel .linhaLojas {
@@ -7598,7 +7605,7 @@ footer .bg-pattern {
 
 #map {
   float: right; 
-  margin: 4px 8px 4px;
+  margin: 12px 12px;
   cursor: pointer;
 }
 
@@ -10748,7 +10755,6 @@ option[value=""][disabled] {
   .navbar .navbar-collapse::-webkit-scrollbar {
     display: flex;
   } 
-
   .navbar.nav-scroll {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -10848,7 +10854,6 @@ option[value=""][disabled] {
     padding: 0;
     min-height: auto;
   }
-
   .crev-slider .gallery-img .bg-img {
     height: 50vh;
   }
