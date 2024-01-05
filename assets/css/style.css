@@ -3249,7 +3249,7 @@ body.loaded {
   background-color: transparent;
   border: none;
   padding: 10px 10px 15px 10px;
-  /*margin: 0 10px;*/
+  margin: 0 10px;
 }
 
 .navbar .navbar-nav .nav-link .rolling-text {
@@ -5591,7 +5591,7 @@ background-color: transparent;
   margin: auto;
 }
 #topicosvalcenter {
-  background-image: url(../imgs/BACKGROUND_SITE_C.webp);
+ /* background-image: url(../imgs/BACKGROUND_SITE_C.webp);*/
   background-position: center center;
   background-size: cover;
 }
@@ -7414,6 +7414,8 @@ footer .bg-pattern {
   align-items: center !important;
 }
 
+
+
 .work-carsouel {
   position: relative;
 }
@@ -7605,6 +7607,7 @@ footer .bg-pattern {
 
 #map {
   float: right; 
+  width: 20px;
   margin: 12px 12px;
   cursor: pointer;
 }
@@ -7821,14 +7824,17 @@ body.inter-center {
   -o-object-fit: cover;
   object-fit: cover;
 }
-
-@media only screen and (min-device-width: 325px) and (max-width: 768px){
-  .box-lojas {
-   
-
+@media only screen and (min-device-width: 325px) and (max-width: 768px) {
+  #sessaovalcenter {
+    background-image: url(../imgs/valcenter/background-cozinha.webp);
+    background-position: center;
+    background-size: cover; 
+  }
+  #map {
+    margin: 0;
+    width: 18px;    
   }
 }
-  
 
 /* Pricing
 -----------------------------------------------------------------*/
@@ -8003,12 +8009,30 @@ body.inter-center {
 .block-serv .content p {
   font-size: 14px;
 }
+.resp-container{
+  position: relative;
+  overflow: hidden;    
+}
 
+.resp-iframe {
+position: relative;
+  width: 560px;
+height:415px;
+top: 0;
+left: 0;
+border: 0;
+}
 @media all and (min-width: 275px) and (max-width: 900px) {
   .block-serv .design {
     display: flex;
     flex-direction: column-reverse;   
   } 
+  .resp-iframe {
+    width: 100%;
+    height:auto;
+		position: relative;
+	}
+
 }
 
 .services-crv .crle-item {
@@ -8177,7 +8201,9 @@ body.inter-center {
 .serv-box  .estrelaValcenter {
   width: auto;
   height: 100%;
+  padding-top: 50px;
 }
+
 
 /*Responsividade sobre*/
 @media all and (min-width: 275px) and (max-width: 1200px) {
@@ -8816,7 +8842,7 @@ header.in-box {
   background-size: cover;
 }
 /*Mobile firts*/
-@media screen and (min-width: 275px) and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
   .swiper-slide  .image1 {
     background-image: url(../imgs/valcenter/carrossel/new/A_MOBILE.webp);
     background-size: cover;      
@@ -10749,7 +10775,6 @@ option[value=""][disabled] {
     max-height: 440px;
     overflow: auto;
   }
-
   /* display: none;
   */
   .navbar .navbar-collapse::-webkit-scrollbar {
@@ -10759,11 +10784,13 @@ option[value=""][disabled] {
     padding-top: 15px;
     padding-bottom: 15px;
   }
+
   .navbar .container {
     padding: 0;
     width: 100%;
     max-width: 100%;
   }
+
   .navbar .navbar-collapse {
     background: transparent;
     border-top: 1px solid rgba(255, 255, 255, 0.1);

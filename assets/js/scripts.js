@@ -81,9 +81,8 @@ $(function () {
             logo.attr('src', 'assets/imgs/logo_b.webp');
 
         } else {
-
             navbar.removeClass("nav-scroll");
-            logo.attr('src', 'assets/imgs/logo-light.png');
+            logo.attr('src', 'assets/imgs/logo_b.webp');
         }
     });
 
